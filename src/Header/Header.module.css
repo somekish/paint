@@ -1,0 +1,8 @@
+.Header {
+  height: 100px;
+  background-color: rgb(241, 229, 229);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 20px;
+  margin-bottom: 30px;
+}

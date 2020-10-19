@@ -1,0 +1,10 @@
+.Footer {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(204, 180, 226);
+  padding: 20px;
+}
+.Footer p {
+  text-align: center;
+}

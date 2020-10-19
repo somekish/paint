@@ -1,0 +1,17 @@
+.Companies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Companies .imgBlock {
+  width: 150px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+}
+.Companies img {
+  width: 150px;
+}
+.Companies p {
+  text-align: center;
+  font-size: 12px;
+}

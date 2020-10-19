@@ -1,0 +1,8 @@
+.Menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}

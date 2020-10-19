@@ -1,0 +1,7 @@
+.Benefits {
+  display: flex;
+  justify-content: space-around;
+}
+.Benefits img {
+  width: 80px;
+}

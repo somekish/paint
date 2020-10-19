@@ -1,0 +1,18 @@
+.Nav {
+  width: 30%;
+  height: 100%px;
+  margin-right: 30px;
+  border: 2px blueviolet solid;
+}
+.Nav h2 {
+  background-color: grey;
+  color: white;
+}
+.Nav p {
+  padding: 5px;
+  border-radius: 5px;
+}
+.Nav p:hover {
+  color: white;
+  background-color: blueviolet;
+}

@@ -1,0 +1,20 @@
+.SearchBox {
+  width: 100%;
+}
+.SearchBox input {
+  margin-right: 10px;
+  width: 600px;
+  height: 40px;
+  border: blueviolet 2px solid;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.SearchBox button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 20px;
+}
