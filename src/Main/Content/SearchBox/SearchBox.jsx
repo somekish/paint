@@ -1,13 +1,11 @@
 import React from "react";
 import s from "./SearchBox.module.css";
-import { updateSearchActionCreator } from "../../../redux/reducers/mainReducer";
 
 function SearchBox(props) {
   let inputRef = React.createRef();
   let updateSearch = () => {
     let text = inputRef.current.value;
-    props.dispatch(updateSearchActionCreator(text));
-    debugger;
+    props.updateSearchText(text);
   };
   return (
     <div className={s.SearchBox}>

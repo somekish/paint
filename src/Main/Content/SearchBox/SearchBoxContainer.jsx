@@ -1,16 +1,42 @@
-import React from "react";
-import s from "./SearchBox.module.css";
+import { connect } from "react-redux";
 import { updateSearchActionCreator } from "../../../redux/reducers/mainReducer";
 import SearchBox from "./SearchBox";
 
-function SearchBoxContainer(props) {
-  let inputRef = React.createRef();
-  let updateSearch = () => {
-    let text = inputRef.current.value;
-    props.dispatch(updateSearchActionCreator(text));
-    debugger;
+// function SearchBoxContainer() {
+//
+//   return (
+//     <StoreContext.Consumer>
+//       {(store) => {
+//         let updateSearch = (text) => {
+//           store.dispatch(updateSearchActionCreator(text));
+//         };
+//         return (
+//           <SearchBox
+//             updateSearchActionCreator={updateSearch}
+//             state={store.getState()}
+//           />
+//         );
+//       }}
+//     </StoreContext.Consumer>
+//   );
+// }
+
+let mapStateToProps = (state) => {
+  return {
+    state: state.main.content.searchBox,
   };
-  return <SearchBox />;
-}
+};
+
+let mapDispatchToProps = (dispatch) => {
+  return {
+    updateSearchText: (text) => {
+      dispatch(updateSearchActionCreator(text));
+    },
+  };
+};
+const SearchBoxContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SearchBox);
 
 export default SearchBoxContainer;

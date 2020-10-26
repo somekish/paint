@@ -93,11 +93,16 @@ const initialState = {
 };
 
 const mainReducer = (state = initialState, action) => {
+  let newState = { ...state };
+  newState.content = { ...state.content };
+  newState.content.searchBox = { ...state.content.searchBox };
+  newState.content.searchBox.value = [...state.content.searchBox.value];
+
   if (action.type === "UPDATE_SEARCH_VAL") {
-    state.content.searchBox.value = action.searchMessage;
-    debugger;
+    newState.content.searchBox.value = action.searchMessage;
   }
-  return state;
+  debugger;
+  return newState;
 };
 
 export const updateSearchActionCreator = (text) => {
