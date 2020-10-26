@@ -2,14 +2,35 @@ const UPDATE_SEARCH_VAL = "UPDATE_SEARCH_VAL";
 
 const initialState = {
   nav: [
-    { id: 1, src: "", title: "КРАСКИ И ЭМАЛИ ДЛЯ ВНУТРЕННИХ РАБОТ" },
-    { id: 2, src: "", title: "КРАСКИ И ЭМАЛИ ДЛЯ НАРУЖНЫХ РАБОТ" },
-    { id: 3, src: "", title: "АНТИСЕПТИКИ И ПРОПИТКИ ДЛЯ ДЕРЕВА" },
-    { id: 4, src: "", title: "КЛЕИ,ГЕРМЕТИКИ,ГИДРОИЗОЛЯЦИЯ" },
-    { id: 5, src: "", title: "КРАСКИ,ЭМАЛИ УНИВЕРСАЛЬНЫЕ" },
-    { id: 6, src: "", title: "ШТУКАТУРКИ" },
-    { id: 7, src: "", title: "РАСТВОРИТЕЛИ, ОЧИСТИТЕЛИ, СПЕЦСРЕДСТВА" },
-    { id: 8, src: "", title: "ПРОМЫШЛЕННЫЕ ПОКРЫТИЯ" },
+    {
+      id: 1,
+      src: "kraski_amali_vnutr",
+      title: "КРАСКИ И ЭМАЛИ ДЛЯ ВНУТРЕННИХ РАБОТ",
+    },
+    {
+      id: 2,
+      src: "kraski_amali_naruzh",
+      title: "КРАСКИ И ЭМАЛИ ДЛЯ НАРУЖНЫХ РАБОТ",
+    },
+    {
+      id: 3,
+      src: "antiseptili_propitki",
+      title: "АНТИСЕПТИКИ И ПРОПИТКИ ДЛЯ ДЕРЕВА",
+    },
+    { id: 4, src: "klei_germetiki", title: "КЛЕИ,ГЕРМЕТИКИ,ГИДРОИЗОЛЯЦИЯ" },
+    {
+      id: 5,
+      src: "kraski_amali_universal",
+      title: "КРАСКИ,ЭМАЛИ УНИВЕРСАЛЬНЫЕ",
+    },
+    { id: 6, src: "shtukaturki", title: "ШТУКАТУРКИ" },
+    {
+      id: 7,
+      src: "rastvoriteli",
+      title: "РАСТВОРИТЕЛИ, ОЧИСТИТЕЛИ, СПЕЦСРЕДСТВА",
+    },
+    { id: 8, src: "prom_pokritiya", title: "ПРОМЫШЛЕННЫЕ ПОКРЫТИЯ" },
+    { id: 9, src: "vse_tovary", title: "ВСЕ ТОВАРЫ" },
   ],
   content: {
     searchBox: {
